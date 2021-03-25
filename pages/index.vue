@@ -4,14 +4,13 @@
         {{ message }}
       </h1> -->
       <!-- <p>{{ $store.state.hello.message }}</p> -->
-      <p>Counter: {{ $store.state.counter.counter }}</p>
       <!-- <button v-on:click="$store.dispatch('hello/updateMessageAction','Dispatch with payload')">Dispatch</button>      -->
       <!-- <button @click="updateMessage">update</button>      -->
       <!-- <button @click="updateMessage">dispatch</button>      -->
+      <p>Counter: {{ $store.state.counter.counter }}</p>
       <button @click="increment">increment</button>     
       <button @click="decrement">decrement</button>     
       <button @click="reset">reset</button>     
-
       <hr>
       <router-link to="/price">Price page</router-link>
       <!-- <img src="~/assets/cat.jpg" alt="cat"> -->
