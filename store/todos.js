@@ -1,5 +1,6 @@
 import firebase from '~/plugins/firebase'; //初期化ファイル
 import { firestoreAction } from 'vuexfire'; //cloud firestoreを便利にしてくれるものらしい
+import _ from 'lodash';
 
 //データベースの設定
 const db = firebase.firestore(); 
@@ -34,4 +35,10 @@ export const actions = {
       done: !todo.done
     })
   })
+}
+
+export const getters = {
+  orderdTodos:  state => {
+    return _.sortBy(state.todos, 'created')
+  }
 }

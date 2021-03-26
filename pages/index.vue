@@ -13,6 +13,7 @@
       <button @click="reset">reset</button>     
       <hr>
       <router-link to="/price">Price page</router-link>
+      <router-link to="/todos">todo page</router-link>
       <!-- <img src="~/assets/cat.jpg" alt="cat"> -->
   </div>
       <!-- <div>
